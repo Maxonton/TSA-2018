@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class basketballThrow : MonoBehaviour 
 {
-	public float throwForce;
+	public float throwForce = 5;
 	public bool canThrow;
 
 	Rigidbody rigid;
 	public BasketBall stop;
-	public GameObject Player;
+	public GameObject Issue;
+	public GameObject Spot;
+
 
 	// Use this for initialization
 	void Awake () 
@@ -38,11 +40,12 @@ public class basketballThrow : MonoBehaviour
 		{
 			//transform.parent = null;
 			canThrow = true;
-			gameObject.transform.parent = Player.transform;
+			Issue.transform.parent = Spot.transform;
 			stop.enabled = false;
 			rigid.isKinematic = true;
 			//rigid.useGravity = true;
 			//rigid.constraints = RigidbodyConstraints.FreezePosition;
+			transform.localPosition = new Vector3(0,0,0);
 		}
 	}
 }
