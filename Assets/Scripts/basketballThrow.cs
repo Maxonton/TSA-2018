@@ -11,6 +11,7 @@ public class basketballThrow : MonoBehaviour
 	public BasketBall stop;
 	public GameObject Issue;
 	public GameObject Spot;
+	//public CameraCatch levelStart;
 
 
 	// Use this for initialization
@@ -19,6 +20,8 @@ public class basketballThrow : MonoBehaviour
 		rigid = GetComponent<Rigidbody> ();
 		stop = GetComponent<BasketBall> ();
 		transform.parent = null;
+		//levelStart = GetComponent<CameraCatch> ();
+		//Floating fly = GameObject.FindGameObjectWithTag("Player").GetComponent<Floating> ();
 	}
 	
 	// Update is called once per frame
