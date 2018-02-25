@@ -491,6 +491,11 @@ Prefab:
       propertyPath: Spot
       value: 
       objectReference: {fileID: 11440924}
+    - target: {fileID: 114004431445883958, guid: 2c36056bf7acea844bf81fcce3c65b7d,
+        type: 2}
+      propertyPath: ballDistance
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c36056bf7acea844bf81fcce3c65b7d, type: 2}
   m_IsPrefabParent: 0
