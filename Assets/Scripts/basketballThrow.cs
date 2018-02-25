@@ -10,10 +10,13 @@ public class basketballThrow : MonoBehaviour
     public GameObject playerCamera;
 
 	Rigidbody rigid;
+    Collider objectCollider;
 
 	public BasketBall stop;
 	public GameObject Issue;
 	public GameObject Spot;
+    
+
 	//public CameraCatch levelStart;
 
     GameObject prefab;
@@ -28,6 +31,7 @@ public class basketballThrow : MonoBehaviour
 		rigid = GetComponent<Rigidbody> ();
 		stop = GetComponent<BasketBall> ();
 		transform.parent = null;
+        objectCollider = GetComponent<Collider>();
 		//levelStart = GetComponent<CameraCatch> ();
 		//Floating fly = GameObject.FindGameObjectWithTag("Player").GetComponent<Floating> ();
 	}
@@ -56,6 +60,8 @@ public class basketballThrow : MonoBehaviour
         } else if (canThrow == true)
         {
             transform.position = playerCamera.transform.position + playerCamera.transform.forward;
+            objectCollider.enabled = false;
+
         }
 		
 	}
@@ -92,6 +98,8 @@ public class basketballThrow : MonoBehaviour
 
         canThrow = false;
         Debug.Log("You can no longer throw the ball");
+
+        objectCollider.enabled = true;
     }
 
 }
