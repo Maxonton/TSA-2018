@@ -5,6 +5,7 @@ using UnityEngine;
 public class basketballThrow : MonoBehaviour 
 {
 	public float throwForce = 5f;
+    public float ballDistance = 5f;
 	public bool canThrow;
 
     public GameObject playerCamera;
@@ -59,7 +60,7 @@ public class basketballThrow : MonoBehaviour
             //rigid.constraints = RigidbodyConstraints.FreezePosition;
         } else if (canThrow == true)
         {
-            transform.position = playerCamera.transform.position + playerCamera.transform.forward;
+            transform.position = playerCamera.transform.position + playerCamera.transform.forward * ballDistance;
             objectCollider.enabled = false;
 
         }
