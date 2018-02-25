@@ -366,7 +366,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5000007}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &284964771
 Rigidbody:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0650d2e54413045a988f6ab9b3027e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 2000
+  throwForce: 800
   canThrow: 0
   playerCamera: {fileID: 518967246}
   stop: {fileID: 284964772}
@@ -742,7 +742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501702227
 GameObject:
@@ -948,7 +948,7 @@ Transform:
   - {fileID: 518967250}
   - {fileID: 11440929}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2038646742
 MonoBehaviour:
