@@ -1,38 +1,35 @@
 fileFormatVersion: 2
-guid: 581857f638ae1d848948df833756dc6c
-timeCreated: 1519596948
+guid: 2b3e4c1ec9429b84388a25cbcaf4ed71
+timeCreated: 1519599013
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Camera
-    100002: Cylinder
-    100004: Empty
-    100006: Empty.001
-    100008: //RootNode
-    100010: Lamp
-    100012: Plane
-    100014: Torus
-    400000: Camera
-    400002: Cylinder
-    400004: Empty
-    400006: Empty.001
-    400008: //RootNode
-    400010: Lamp
-    400012: Plane
-    400014: Torus
-    2000000: Camera
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Plane
-    2300004: Torus
-    3300000: Cylinder
-    3300002: Plane
-    3300004: Torus
-    4300000: Cylinder
-    4300002: Plane
-    4300004: Torus
-    10800000: Lamp
+    100000: //RootNode
+    100002: Plane
+    100004: Point
+    100006: Sphere.001
+    400000: //RootNode
+    400002: Plane
+    400004: Point
+    400006: Sphere.001
+    2100000: Plane
+    2100002: Material.003
+    2100004: Emission_6
+    2100006: Emission_8
+    2100008: Emission_4
+    2100010: Emision_3
+    2100012: Emission_7
+    2100014: Emission_2
+    2100016: Emission_5
+    2100018: Emission
+    2300000: Plane
+    2300002: Sphere.001
+    3300000: Plane
+    3300002: Sphere.001
+    4300000: Plane
+    4300002: Sphere.001
+    10800000: Point
   externalObjects: {}
   materials:
     importMaterials: 1
