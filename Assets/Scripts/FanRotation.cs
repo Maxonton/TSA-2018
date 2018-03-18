@@ -8,6 +8,9 @@ public class FanRotation : MonoBehaviour
 	public Transform to;
 	public float speed;
 	public bool rotation = false;
+
+	public float rotate1 = 0;
+	public float rotate2 = 90;
 	// Use this for initialization
 	void Start () {
 		
