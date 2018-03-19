@@ -13,8 +13,8 @@ public class FanRotation3 : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+      
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () 
@@ -26,6 +26,7 @@ public class FanRotation3 : MonoBehaviour
 	}
 
 	void FanMove(){
+
 		if (transform.rotation == End.rotation) {
 			Switch = true;
 		}
@@ -34,16 +35,21 @@ public class FanRotation3 : MonoBehaviour
 		}
 
 		if (Switch) {
-			transform.rotation = Vector3.RotateTowards (transform.rotation, Origin.rotation, turnSpeed, 0.0F);
+            Vector3 origin = Origin.position;
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, origin, turnSpeed, 0.0F);
+            transform.rotation = Quaternion.LookRotation(newDirection);
 		} else {
-			transform.rotation = Vector3.RotateTowards (transform.rotation, End.rotation, turnSpeed, 0.0F);
-		}
+            Vector3 end = End.position;
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, end, turnSpeed, 0.0F);
+            transform.rotation = Quaternion.LookRotation(newDirection);
+        }
 	}
 
 	void OnCollisionEnter (Collision col)
 	{
 		if (col.gameObject.tag == "Ball")
 		{
+            Debug.Log("The ball has hit the fan");
 			rotating = true;
 		}
 			
