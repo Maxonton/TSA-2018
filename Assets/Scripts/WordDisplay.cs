@@ -34,6 +34,10 @@ public class WordDisplay : MonoBehaviour {
         transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
     }
 
-    
+	private void OnTriggernEnter2D (Collider2D collision){
+		if (collision.gameObject.tag == "Lava") {
+			RemoveWord ();
+		}
+	}
 
 }

@@ -18,7 +18,7 @@ public class WordSpawner : MonoBehaviour {
 		Vector3 topPosition = new Vector3(Random.Range(minx, maxx),ycoord);
 		//random back to xcord
 
-        GameObject wordObj = Instantiate(wordPrefab, topPosition, Quaternion.identity);
+		GameObject wordObj = Instantiate(wordPrefab, topPosition, Quaternion.identity, wordCanvas);
 		//ended with wordCanvas
         WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
 
