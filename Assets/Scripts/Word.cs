@@ -27,7 +27,7 @@ public class Word : MonoBehaviour {
     public void TypeLetter()
     {
         typeIndex++;
-        //Remove the letter on screen
+        display.RemoveLetter();
     }
 
     public bool WordTyped()
@@ -35,7 +35,7 @@ public class Word : MonoBehaviour {
         bool wordTyped = (typeIndex >= word.Length);
         if (wordTyped)
         {
-            //Remove the word on screen
+            display.RemoveWord();
         }
         return wordTyped;
     }

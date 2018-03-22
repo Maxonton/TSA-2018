@@ -5,10 +5,11 @@ using UnityEngine;
 public class WordSpawner : MonoBehaviour {
 
     public GameObject wordPrefab;
+    public Transform wordCanvas;
 
 	public WordDisplay SpawnWord()
     {
-        GameObject wordObj = Instantiate(wordPrefab);
+        GameObject wordObj = Instantiate(wordPrefab, wordCanvas);
         WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
 
         return wordDisplay;
