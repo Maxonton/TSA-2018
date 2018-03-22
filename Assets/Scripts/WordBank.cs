@@ -21,7 +21,10 @@ public class WordBank : MonoBehaviour {
 		//"league", "offense", "defense", "opponent", "team mate", "quarterback", "player", "referee", "trainer", "barrel racing", "calisthenics", 
 		//"dodgeball"};
 	//300 words is not happening. I hope the levels aren't to long.
-	//private static string WordsHard = { }; 
+	//private static string WordsHard = { "motorcycle racing", "abseiling", "aerobatic gymnastics", "aerials", "aesthetic group gymnastics", 
+		//"aggressive inline skating", "aikido", "alpine skiing", "balkline", "bicycle motorcross", "bobsleigh", "bouldering", 
+		//"cross-country skiing", "dog sledding", "endurance running", "fast pitch softball", "pole vault", "fisticuffs", "horseback archery"};
+	// I really don't want to do this. Please, can I help with the coding?
 //=======
 	//private static string WordsMedium = {"soccer", "gymnastics", "hockey", "referee", "athletic", "toboggan", "baseball", "basketball", 
 	//	"archery", "bobsled", "speed skate", "dexterity", "possession", "snowboard", "slalom", "netball", "windsurf" };
