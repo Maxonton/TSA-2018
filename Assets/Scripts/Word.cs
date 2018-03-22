@@ -30,6 +30,7 @@ public class Word : MonoBehaviour {
         display.RemoveLetter();
     }
 
+   
     public bool WordTyped()
     {
         bool wordTyped = (typeIndex >= word.Length);

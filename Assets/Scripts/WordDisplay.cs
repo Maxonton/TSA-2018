@@ -33,4 +33,7 @@ public class WordDisplay : MonoBehaviour {
     {
         transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
     }
+
+    
+
 }
