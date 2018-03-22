@@ -12,9 +12,21 @@ public class WordBank : MonoBehaviour {
 		//"climb", "board", "shoot", "flip", "lift", "bar", "sail", "cricket", "box", "squash", "hit", "game", "spar", 
 	//	"sled", "foul", "toss", "pass", "save", "hike", "curl", "event", "tour", "cars", "jock"};
 	//I don't like making these pointless lists
+//<<<<<<< HEAD
+	//private static string WordsMedium = {"soccer", "gymnastics", "hockey", "referee", "athletic", "toboggan", "baseball", "basketball", 
+		//"archery", "bobsled", "speed skate", "dexterity", "possession", "snowboard", "slalom", "netball", "windsurf", "acrobatic", "quiver", 
+		//"badminton", "boomerang", "boxing", "bowling", "canoe", "competition", "cross country", "cycling", "dugout", "discus", "equestrian", 
+		//"fencing", "free throw", "frisbee", "handball", "home run", "kayaking", "kickball", "lacrosse", "outfield", "paintball", "pickleball", 
+		//"racquetball", "rollar skating", "soft ball", "water polo", "waterski", "wrestling", "football", "volleyball", "dribble", "goalkeeper", 
+		//"league", "offense", "defense", "opponent", "team mate", "quarterback", "player", "referee", "trainer", "barrel racing", "calisthenics", 
+		//"dodgeball"};
+	//300 words is not happening. I hope the levels aren't to long.
+	//private static string WordsHard = { }; 
+//=======
 	//private static string WordsMedium = {"soccer", "gymnastics", "hockey", "referee", "athletic", "toboggan", "baseball", "basketball", 
 	//	"archery", "bobsled", "speed skate", "dexterity", "possession", "snowboard", "slalom", "netball", "windsurf" };
 	//private static string WordsHard = { }; 
+//>>>>>>> 86ee3ad01a970be090bbe733a8ba0fa229cbe926
 	// Use this for initialization
 
 }
