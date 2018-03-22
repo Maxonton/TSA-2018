@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class WordManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public List<Word> words;
+
+    private void Start()
+    {
+        AddWord();
+        AddWord();
+        AddWord();
+    }
+
+    public void AddWord()
+    {
+        Word word = new Word(WordGenerator.GetRandomWord());
+        Debug.Log(word.word);
+    }
 }
