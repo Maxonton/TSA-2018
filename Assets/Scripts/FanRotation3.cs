@@ -51,11 +51,13 @@ public class FanRotation3 : MonoBehaviour
 		{
             Debug.Log("The ball has hit the fan");
 			rotating = true;
+            Debug.Log("The fan is now rotating");
 		}
 			
 		if (col.gameObject.tag == "EndPoints")
 			{
 				rotating = false;
+            Debug.Log("The fan is no longer rotating");
 			}
 	}
 }
