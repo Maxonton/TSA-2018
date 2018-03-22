@@ -6,13 +6,17 @@ using UnityEngine;
 public class Word : MonoBehaviour {
 
      public string word;
+     private int typeIndex;
 
-    private int typeIndex;
+    WordDisplay display;
 
-     public Word (string _word)
+     public Word (string _word, WordDisplay _display)
         {
             word = _word;
             typeIndex = 0;
+
+            display = _display;
+            display.SetWord(word);
         }
 
     public char GetNextLetter()
