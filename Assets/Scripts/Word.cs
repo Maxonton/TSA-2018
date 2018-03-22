@@ -6,13 +6,17 @@ using UnityEngine;
 public class Word : MonoBehaviour {
 
      public string word;
+     private int typeIndex;
 
-    private int typeIndex;
+    WordDisplay display;
 
-     public Word (string _word)
+     public Word (string _word, WordDisplay _display)
         {
             word = _word;
             typeIndex = 0;
+
+            display = _display;
+            display.SetWord(word);
         }
 
     public char GetNextLetter()
@@ -23,7 +27,7 @@ public class Word : MonoBehaviour {
     public void TypeLetter()
     {
         typeIndex++;
-        //Remove the letter on screen
+        display.RemoveLetter();
     }
 
     public bool WordTyped()
@@ -31,7 +35,7 @@ public class Word : MonoBehaviour {
         bool wordTyped = (typeIndex >= word.Length);
         if (wordTyped)
         {
-            //Remove the word on screen
+            display.RemoveWord();
         }
         return wordTyped;
     }
