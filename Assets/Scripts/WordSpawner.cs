@@ -14,10 +14,12 @@ public class WordSpawner : MonoBehaviour {
 
 	public WordDisplay SpawnWord()
     {
-        float xcoord = Random.Range(minx, maxx);
-        Vector3 topPosition = new Vector3(xcoord,ycoord);
+        //float xcoord = Random.Range(minx, maxx);
+		Vector3 topPosition = new Vector3(Random.Range(minx, maxx),ycoord);
+		//random back to xcord
 
-        GameObject wordObj = Instantiate(wordPrefab, topPosition, Quaternion.identity, wordCanvas);
+        GameObject wordObj = Instantiate(wordPrefab, topPosition, Quaternion.identity);
+		//ended with wordCanvas
         WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
 
         return wordDisplay;
