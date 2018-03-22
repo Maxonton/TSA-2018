@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class WordDisplay : MonoBehaviour {
 
     public Text text;
+    public float fallSpeed;
+
+    private void Start()
+    {
+        fallSpeed = Random.Range(1f, 2f);
+    }
 
     public void SetWord (string word)
     {
@@ -21,5 +27,10 @@ public class WordDisplay : MonoBehaviour {
     public void RemoveWord()
     {
         Destroy(gameObject);
+    }
+
+    private void Update()
+    {
+        transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
     }
 }
